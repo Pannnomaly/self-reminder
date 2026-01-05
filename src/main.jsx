@@ -6,7 +6,8 @@ import App from './App'
 import ErrorPage from './pages/ErrorPage'
 import Layout from './components/Layout'
 import Homepage from './pages/Homepage'
-import Page_1 from './pages/Page_1'
+import AboutMe from './pages/AboutMe'
+import DeveloperActs from './pages/DeveloperAct'
 
 const router = createBrowserRouter ([
   {
@@ -18,7 +19,8 @@ const router = createBrowserRouter ([
         element: <Layout />,
         children: [
           { index: true, element: <Homepage /> },
-          { path: "page_1", element: <Page_1 /> },
+          { path: "about_me", element: <AboutMe /> },
+          { path: "developer_acts", element: <DeveloperActs /> },
         ],
       },
     ],
